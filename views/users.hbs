@@ -9,7 +9,10 @@
         {{#each users}}
             <div class="user">
                 <h3>{{name}}</h3>
-                <p>{{address}}</p>
+                <p>{{address.street}}</p>
+                <p>{{address.suite}}</p>
+                <p>{{address.city}}</p>
+                <p>{{address.zipcode}}</p>
                 <a href="">{{website}}</a>
             </div>
         {{/each}}
