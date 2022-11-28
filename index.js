@@ -19,21 +19,14 @@ app.get('/', function(req, res){
     });
 });
 
-app.get('/mongoose', function(req, res){
-    
-});
 
 app.get('/users', function(req, res){
     user.list(function(err, users){
         if(err) res.send(err);
-        // console.log(users);
         res.render('users', {users});
     })
 });
 
-// app.get('/user/:id', function(req, res){
-//     res.send('user' + req.params.id)
-// })
 
 
 app.listen(9090, function(){
